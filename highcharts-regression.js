@@ -15,7 +15,7 @@
         var i = 0 ;
         for (i = 0 ; i < series.length ; i++){
             var s = series[i];
-            if ( s.regression && !s.rendered ) {
+            if (s && s.regression && !s.rendered) {
                 s.regressionSettings =  s.regressionSettings || {} ;
                 s.regressionSettings.tooltip = s.regressionSettings.tooltip || {} ;
                 s.regressionSettings.dashStyle = s.regressionSettings.dashStyle || 'solid';
